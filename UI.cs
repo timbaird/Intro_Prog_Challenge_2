@@ -113,7 +113,6 @@ namespace CivSem1Challenge2_RegistrationSystem
                     //TODO: print the students who first registered in year num and are doing course courseNum
 
                     List<Course> cl = this.Courses.Where(c=> c.CourseNo == courseNum).ToList();
-                    
 
                     if(cl.Count == 1)
                     {
@@ -131,6 +130,19 @@ namespace CivSem1Challenge2_RegistrationSystem
                 case "8":
                     //TODO: (optional CREDIT TASK) - Print a list of students who are not enrolled in a valid courses
                     // create a method/function called GetUnenrolledStudents to do this
+                    
+                    //Console.WriteLine(this.Students.IndexOf(this.Students[15]));
+                    
+                    var unenrolled = GetUnerolledStudents();
+                    
+                    Console.WriteLine("\nThere are " + unenrolled.Count + " students not enrolled in any course \n");
+
+                    foreach(var s in unenrolled){
+                        Console.WriteLine(s.GetFullName());
+                    }
+
+                    Console.WriteLine("\n");
+
                     break;
 
                 case "9":
@@ -269,6 +281,20 @@ namespace CivSem1Challenge2_RegistrationSystem
         }
 
         //TODO: Create the GetUnerolledStudents method/function here
+
+        private List<Student> GetUnerolledStudents(){
+
+            // get all enrolled students
+            List<Student> enrolled = new List<Student>();
+            foreach(var c in this.Courses){
+                enrolled.AddRange(c.Enrolments);
+            }
+
+            // make sure there are no duplcates in the list
+            enrolled = enrolled.Distinct().ToList();
+
+            return this.Students.Where(s => enrolled.All(e => e.StudentNo != s.StudentNo)).ToList();
+        }
 
     }
 }
