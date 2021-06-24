@@ -87,7 +87,8 @@ namespace CivSem1Challenge2_RegistrationSystem
 
                 case "5":
                     //TODO: Print the number of students enrolled in valid courses
-                    
+                    int total = this.Courses.Sum(item => item.Enrolments.Count);
+                    Console.WriteLine("\n Total Enrollments => " + total + "\n");
                     break;
 
                 case "6":
