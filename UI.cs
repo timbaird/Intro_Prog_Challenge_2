@@ -131,8 +131,6 @@ namespace CivSem1Challenge2_RegistrationSystem
                     //TODO: (optional CREDIT TASK) - Print a list of students who are not enrolled in a valid courses
                     // create a method/function called GetUnenrolledStudents to do this
                     
-                    //Console.WriteLine(this.Students.IndexOf(this.Students[15]));
-                    
                     var unenrolled = GetUnerolledStudents();
                     
                     Console.WriteLine("\nThere are " + unenrolled.Count + " students not enrolled in any course \n");
@@ -147,6 +145,15 @@ namespace CivSem1Challenge2_RegistrationSystem
 
                 case "9":
                     //TODO: (optional DISTINCTION TASK) - Print the oldest student's studentno
+
+                    DateTime earliestDOB = this.Students.Min(s => new DateTime(s.YearOfBirth, s.MonthOfBirth, s.DateOfBirth));
+
+                    List<Student> oldest = this.Students.Where(s => s.YearOfBirth == earliestDOB.Year &&
+                                                                    s.MonthOfBirth == earliestDOB.Month &&
+                                                                    s.DateOfBirth == earliestDOB.Day).ToList();
+
+                    Console.WriteLine("\nThe oldest Student is "+ oldest[0].StudentNo + " " + oldest[0].GetFullName() + "\n");
+
                     break;
 
                 case "10":

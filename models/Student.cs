@@ -1,3 +1,5 @@
+using System;
+
 namespace CivSem1Challenge2_RegistrationSystem.models {
     public class Student : Person {
         public int StudentNo { get; set; }
@@ -14,7 +16,9 @@ namespace CivSem1Challenge2_RegistrationSystem.models {
             return this.FirstName + " " + this.Surname;
         }
 
-        
+        public DateTime GetDOB(){
+            return new DateTime(this.YearOfBirth, this.MonthOfBirth, this.DateOfBirth);
+        }
 
     }
 }
