@@ -11,7 +11,7 @@ namespace CivSem1Challenge2_RegistrationSystem.models {
 
         public string GetFullName() {
             //TODO:  return FirstName and Surname with a space in between
-            return $"Daffy Duck";
+            return this.FirstName + " " + this.Surname;
         }
 
         

@@ -1,0 +1,17 @@
+/Volumes/Magnus Servio/Users/tim/repos/Intro_Prog_2021/challenge2/Intro_Prog_Challenge_2/bin/Debug/net5.0/CivSem1Challenge2-RegistrationSystem.deps.json
+/Volumes/Magnus Servio/Users/tim/repos/Intro_Prog_2021/challenge2/Intro_Prog_Challenge_2/bin/Debug/net5.0/CivSem1Challenge2-RegistrationSystem.runtimeconfig.json
+/Volumes/Magnus Servio/Users/tim/repos/Intro_Prog_2021/challenge2/Intro_Prog_Challenge_2/bin/Debug/net5.0/CivSem1Challenge2-RegistrationSystem.runtimeconfig.dev.json
+/Volumes/Magnus Servio/Users/tim/repos/Intro_Prog_2021/challenge2/Intro_Prog_Challenge_2/bin/Debug/net5.0/CivSem1Challenge2-RegistrationSystem.dll
+/Volumes/Magnus Servio/Users/tim/repos/Intro_Prog_2021/challenge2/Intro_Prog_Challenge_2/bin/Debug/net5.0/ref/CivSem1Challenge2-RegistrationSystem.dll
+/Volumes/Magnus Servio/Users/tim/repos/Intro_Prog_2021/challenge2/Intro_Prog_Challenge_2/bin/Debug/net5.0/CivSem1Challenge2-RegistrationSystem.pdb
+/Volumes/Magnus Servio/Users/tim/repos/Intro_Prog_2021/challenge2/Intro_Prog_Challenge_2/bin/Debug/net5.0/CsvHelper.dll
+/Volumes/Magnus Servio/Users/tim/repos/Intro_Prog_2021/challenge2/Intro_Prog_Challenge_2/obj/Debug/net5.0/CivSem1Challenge2-RegistrationSystem.csproj.AssemblyReference.cache
+/Volumes/Magnus Servio/Users/tim/repos/Intro_Prog_2021/challenge2/Intro_Prog_Challenge_2/obj/Debug/net5.0/CivSem1Challenge2-RegistrationSystem.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/Magnus Servio/Users/tim/repos/Intro_Prog_2021/challenge2/Intro_Prog_Challenge_2/obj/Debug/net5.0/CivSem1Challenge2-RegistrationSystem.AssemblyInfoInputs.cache
+/Volumes/Magnus Servio/Users/tim/repos/Intro_Prog_2021/challenge2/Intro_Prog_Challenge_2/obj/Debug/net5.0/CivSem1Challenge2-RegistrationSystem.AssemblyInfo.cs
+/Volumes/Magnus Servio/Users/tim/repos/Intro_Prog_2021/challenge2/Intro_Prog_Challenge_2/obj/Debug/net5.0/CivSem1Challenge2-RegistrationSystem.csproj.CoreCompileInputs.cache
+/Volumes/Magnus Servio/Users/tim/repos/Intro_Prog_2021/challenge2/Intro_Prog_Challenge_2/obj/Debug/net5.0/CivSem1Challenge2-RegistrationSystem.csproj.CopyComplete
+/Volumes/Magnus Servio/Users/tim/repos/Intro_Prog_2021/challenge2/Intro_Prog_Challenge_2/obj/Debug/net5.0/CivSem1Challenge2-RegistrationSystem.dll
+/Volumes/Magnus Servio/Users/tim/repos/Intro_Prog_2021/challenge2/Intro_Prog_Challenge_2/obj/Debug/net5.0/ref/CivSem1Challenge2-RegistrationSystem.dll
+/Volumes/Magnus Servio/Users/tim/repos/Intro_Prog_2021/challenge2/Intro_Prog_Challenge_2/obj/Debug/net5.0/CivSem1Challenge2-RegistrationSystem.pdb
+/Volumes/Magnus Servio/Users/tim/repos/Intro_Prog_2021/challenge2/Intro_Prog_Challenge_2/obj/Debug/net5.0/CivSem1Challenge2-RegistrationSystem.genruntimeconfig.cache

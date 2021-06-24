@@ -35,10 +35,16 @@ namespace CivSem1Challenge2_RegistrationSystem
             var input = Console.ReadLine();
 
             switch(input) {
-
+                
                 case "1":
                     //TODO: from the attribute this.Courses, print the courseNo and names of all of the courses
                     // use GetCourseDetails to do this
+
+                    Console.WriteLine(""); // for output formatting only 
+                    foreach(var c in this.Courses){
+                        Console.WriteLine(c.GetCourseDetails());
+                    }
+                    Console.WriteLine(""); // for output formatting only 
 
                     //----------
                     break;
@@ -128,15 +134,14 @@ namespace CivSem1Challenge2_RegistrationSystem
             }
 
             this.TopMenu();
-
-
-
-            
+        
         }
 
 
         //TODO: create the GetNumStudents method/function here
-
+        private int GetNumStudents(int CourseNum){
+            throw new NotImplementedException();
+        }
 
         //---------------------
 
@@ -145,14 +150,31 @@ namespace CivSem1Challenge2_RegistrationSystem
             //TODO: write code find the relevant student in Students and return the student's first name and surname
             // if num doesn't exist in Students, return null;
             // should use the method GetFullName() from Student/Person to get the name
-            return null;
+            string returnVal = null;
+            
+            foreach(var s in this.Students){
+                if(s.StudentNo == num){
+                    returnVal = s.GetFullName();
+                    break;
+                }
+            }
+            return returnVal;
         }
 
         private int CourseGetNumStudents(int num)
         {
             //TODO: write code find the relevant courseNo in Courses and return the number of students/enrolments
             // if num doesn't exist in Courses, return -1
-            return -1;
+            int returnVal = -1;
+
+            foreach(var c in this.Courses){
+                if(c.CourseNo == num){
+                    returnVal = c.Enrolments.Count;
+                    break;
+                }
+            }
+
+            return returnVal;
         }
 
         private void AddStudent()

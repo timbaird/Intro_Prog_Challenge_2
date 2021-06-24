@@ -1,0 +1,69 @@
+{
+  "format": 1,
+  "restore": {
+    "/Volumes/Magnus Servio/Users/tim/repos/Intro_Prog_2021/challenge2/Intro_Prog_Challenge_2/CivSem1Challenge2-RegistrationSystem.csproj": {}
+  },
+  "projects": {
+    "/Volumes/Magnus Servio/Users/tim/repos/Intro_Prog_2021/challenge2/Intro_Prog_Challenge_2/CivSem1Challenge2-RegistrationSystem.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Magnus Servio/Users/tim/repos/Intro_Prog_2021/challenge2/Intro_Prog_Challenge_2/CivSem1Challenge2-RegistrationSystem.csproj",
+        "projectName": "CivSem1Challenge2-RegistrationSystem",
+        "projectPath": "/Volumes/Magnus Servio/Users/tim/repos/Intro_Prog_2021/challenge2/Intro_Prog_Challenge_2/CivSem1Challenge2-RegistrationSystem.csproj",
+        "packagesPath": "/Users/tim/.nuget/packages/",
+        "outputPath": "/Volumes/Magnus Servio/Users/tim/repos/Intro_Prog_2021/challenge2/Intro_Prog_Challenge_2/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/tim/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[27.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
