@@ -94,6 +94,7 @@ namespace CivSem1Challenge2_RegistrationSystem
                 case "6":
                    //TODO: Add a student to the student List. Then add that student to a valid course
                    this.AddStudent();
+
                    break;
 
                 case "7":
@@ -111,6 +112,20 @@ namespace CivSem1Challenge2_RegistrationSystem
 
                     //TODO: print the students who first registered in year num and are doing course courseNum
 
+                    List<Course> cl = this.Courses.Where(c=> c.CourseNo == courseNum).ToList();
+                    
+
+                    if(cl.Count == 1)
+                    {
+                        List<Student> st = cl[0].Enrolments.Where(s => s.FirstRegistrationYear == num).ToList();
+
+                        Console.WriteLine("\n There are " + st.Count + " students First Enrolled in  " + 
+                                            num + " and  currently enrolled in course no " + courseNum  + " \n");
+                                            
+                        foreach(var s in st){
+                            Console.WriteLine(s.GetFullName());
+                        }
+                    }
                     break;
 
                 case "8":
@@ -239,11 +254,14 @@ namespace CivSem1Challenge2_RegistrationSystem
                     System.Console.WriteLine("Invalid, Not a Number, enter again");
                 }
 
-                List<Course> c = this.Courses.Where(c => c.CourseNo == courseno).ToList();
+                if (courseno == 0000)
+                    break;
 
-                if (c.Count == 1)
+                List<Course> cl = this.Courses.Where(c => c.CourseNo == courseno).ToList();
+
+                if (cl.Count == 1)
                 {
-                    c[0].Enrolments.Add(this.Students.Last());
+                    cl[0].Enrolments.Add(this.Students.Last());
                     break;
                 }
                 System.Console.WriteLine("Invalid, Not an Existing Course, enter again");
