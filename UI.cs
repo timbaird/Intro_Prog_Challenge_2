@@ -157,8 +157,16 @@ namespace CivSem1Challenge2_RegistrationSystem
                     break;
 
                 case "10":
-                    //TODO: (optional HIGH DISTINCTION TASK) - Write the current state of the system back to the csv files.
-                    // add a method to the DataHandler class to do this
+                    try{
+                        DataHandler dh = new DataHandler();
+                        dh.SaveStudents(this.Courses, GetUnerolledStudents());
+                        Console.WriteLine("\nSave Successul\n");
+                    }
+                    catch(Exception e){
+                        Console.WriteLine("\nError - Save UNsuccessful\n");
+                        Console.WriteLine(e.Message + "/n");
+                    }
+                    
                     break;
 
                 case "x":

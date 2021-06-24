@@ -16,9 +16,5 @@ namespace CivSem1Challenge2_RegistrationSystem.models {
             return this.FirstName + " " + this.Surname;
         }
 
-        public DateTime GetDOB(){
-            return new DateTime(this.YearOfBirth, this.MonthOfBirth, this.DateOfBirth);
-        }
-
     }
 }

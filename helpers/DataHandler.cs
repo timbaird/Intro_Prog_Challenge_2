@@ -75,8 +75,40 @@ namespace CivSem1Challenge2_RegistrationSystem.helpers {
             return studentList; 
         }
 
-        
+        public void SaveStudents(List<Course> courses, List<Student> unenrolled){
+            
+            using (var file = File.CreateText("student_data_mock.csv"))
+            {
+                string[] line = new string[] {"firstName","surname","yearOfBirth","monthOfBirth","dateOfBirth","studentNo","FirstRegistrationYear","courseNo"};
+                
+                // write the header
+                file.WriteLine(string.Join(",", line));
+                
+                // write the enrolled students
+                foreach(var c in courses)
+                {
+                    foreach(var s in c.Enrolments)
+                    {
+                        line = new string[] {s.FirstName, s.Surname, s.YearOfBirth.ToString(), 
+                                            s.MonthOfBirth.ToString(), s.DateOfBirth.ToString(), 
+                                            s.StudentNo.ToString(), s.FirstRegistrationYear.ToString(),
+                                            c.CourseNo.ToString()};
 
+                        file.WriteLine(string.Join(",", line));
+                    }
+                }
 
+                // write the unenrolled students
+                foreach(var s in unenrolled){
+                        line = new string[] {s.FirstName, s.Surname, s.YearOfBirth.ToString(), 
+                                            s.MonthOfBirth.ToString(), s.DateOfBirth.ToString(), 
+                                            s.StudentNo.ToString(), s.FirstRegistrationYear.ToString(),
+                                            "0"};
+
+                        file.WriteLine(string.Join(",", line));
+                
+                }
+            } // end using
+        }
     }
 }
